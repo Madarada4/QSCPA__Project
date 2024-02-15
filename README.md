@@ -21,3 +21,7 @@ These files are the ones we used MatlabCode1 code on. The files' names represent
 The project used a decoder that was created in VerilogA. It translates an 8 bit binary code to 256 thermometric code. The code for the decoder is contained in "Decoder VerilogA.txt" file. Additionally, a block that used in the circuit's TB, "Const_word VerilogA.txt" was also created in VerilogA. It recieves as parameter a number from 0 to 255 and outputs an 8 bit binary code in respect to the parameter.
 # Component images file
 Contains images used in the final project
+# Q-SCPA Summary pdf file
+A summary of the project. Contains additional simualtions, with additional explenations.
+# Q-SCPA Suimmary images file
+Conatin additional images of the project, used in Q-SCPA summary.
