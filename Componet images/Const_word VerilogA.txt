@@ -1,0 +1,36 @@
+// VerilogA for Project_Adar, Constant_Word, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Constant_Word(dout);
+output [7:0] dout;
+electrical [7:0] dout;
+
+parameter integer Word_Code = 0 from [0:255];
+parameter real vlogic_high = 1.2;
+parameter real vlogic_low = 0;
+
+
+real vout[7:0];
+integer num;
+integer i;
+genvar k;
+
+`define INPUT_BITS	8
+
+analog begin 
+
+
+	for (i = 0; i < `INPUT_BITS ; i = i + 1) begin
+		vout[i] = (((Word_Code / (2 ** i)) % 2) > 0) * vlogic_high;
+	end
+
+
+	 for( k = 0; k < `INPUT_BITS; k = k + 1) begin
+		V(dout[k]) <+ vout[k];
+  	 end
+ 	`undef INPUT_BITS
+end
+
+endmodule
