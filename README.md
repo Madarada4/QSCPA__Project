@@ -1,2 +1,2 @@
 # QSCPA__Project
-תיעוד פרויקט
+In this file we describe and explain the different files of this Git repository
