@@ -19,3 +19,5 @@ These files are the ones we used MatlabCode1 code on. The files' names represent
   channel is on, for the next 130 points only the I channel is on and for the last 130 points both channels are on.
 # VerilogA files
 The project used a decoder that was created in VerilogA. It translates an 8 bit binary code to 256 thermometric code. The code for the decoder is contained in "Decoder VerilogA.txt" file. Additionally, a block that used in the circuit's TB, "Const_word VerilogA.txt" was also created in VerilogA. It recieves as parameter a number from 0 to 255 and outputs an 8 bit binary code in respect to the parameter.
+# Component images file
+Contains images used in the final project
