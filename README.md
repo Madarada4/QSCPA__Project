@@ -17,3 +17,5 @@ These files are the ones we used MatlabCode1 code on. The files' names represent
   Data for sections 4, 6 and 7: The results are similar to the previous files only that the Q and I code come in chuncks 0:32:224, 255 and the Q and I select bits take all possible options (0 and 1). All in all        there are 324 different configurations.
   Data for section 5: The results are the same. The clock frequency changes from 0.1Hz to 10GHz with 130 steps. The first 130 points are for when both channels are off, for the next 130 points only the Q 
   channel is on, for the next 130 points only the I channel is on and for the last 130 points both channels are on.
+# VerilogA files
+The project used a decoder that was created in VerilogA. It translates an 8 bit binary code to 256 thermometric code. The code for the decoder is contained in "Decoder VerilogA.txt" file. Additionally, a block that used in the circuit's TB, "Const_word VerilogA.txt" was also created in VerilogA. It recieves as parameter a number from 0 to 255 and outputs an 8 bit binary code in respect to the parameter.
